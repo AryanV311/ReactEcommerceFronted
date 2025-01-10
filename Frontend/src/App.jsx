@@ -3,13 +3,14 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import { ShopCategory } from './pages/ShopCategory'
 import { Products } from './pages/Products'
 import { Cart } from './pages/Cart'
-import { Loginsignup } from './pages/Loginsignup'
 import { Navbar } from './Components/Navbar/Navbar'
 import { Footer } from './Components/Footer/Footer'
 import men_banners from "./assets/banner_mens.png"
 import women_banners from "./assets/banner_women.png"
 import kids_banners from "./assets/banner_kids.png"
 import { Shop } from './pages/Shop'
+import { LoginSignup } from './pages/Loginsignup'
+
 
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
           <Route path=':productId' element={<Products />} />
         </Route>
         <Route path='/cart' element={<Cart />} />
-        <Route path='Login' element={<Loginsignup />} />
+        <Route path='Login' element={<LoginSignup />} />
       </Routes>
       <Footer />
       </BrowserRouter>
