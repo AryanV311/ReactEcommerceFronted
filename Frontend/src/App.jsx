@@ -1,6 +1,5 @@
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Shop } from './pages/shop'
 import { ShopCategory } from './pages/ShopCategory'
 import { Products } from './pages/Products'
 import { Cart } from './pages/Cart'
@@ -10,6 +9,7 @@ import { Footer } from './Components/Footer/Footer'
 import men_banners from "./assets/banner_mens.png"
 import women_banners from "./assets/banner_women.png"
 import kids_banners from "./assets/banner_kids.png"
+import { Shop } from './pages/Shop'
 
 
 const App = () => {

@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useState } from "react"
 import all_products from "../assets/all_product.js"
 
