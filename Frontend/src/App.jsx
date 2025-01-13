@@ -10,6 +10,8 @@ import women_banners from "./assets/banner_women.png"
 import kids_banners from "./assets/banner_kids.png"
 import { Shop } from './pages/Shop'
 import { LoginSignup } from './pages/Loginsignup'
+import { MyProfile } from './pages/Myprofile'
+
 
 
 
@@ -29,6 +31,7 @@ const App = () => {
         </Route>
         <Route path='/cart' element={<Cart />} />
         <Route path='/login' element={<LoginSignup />} />
+        <Route path='/my-profile' element={<MyProfile />} />
       </Routes>
       <Footer />
       </BrowserRouter>

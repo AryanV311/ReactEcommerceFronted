@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 import all_products from "../assets/all_product.js"
 
 
@@ -47,9 +47,20 @@ const getTotalCartItems = () => {
     return totalItems
 }
 
+const [userData, setUserData] = useState(
+    JSON.parse(localStorage.getItem("currentUser")) || null
+  );
 
+  const loginUser = (user) => {
+    setUserData(user);
+    localStorage.setItem("currentUser", JSON.stringify(user));
+  };
 
-    const contextValue = { all_products, cartItems, addToCart,removeFromCart,getTotalCartAmount,getTotalCartItems}
+  const logoutUser = () => {
+    setUserData(null);
+    localStorage.removeItem("currentUser");
+  };
+    const contextValue = { all_products, cartItems, addToCart,removeFromCart,getTotalCartAmount,getTotalCartItems,userData,loginUser,logoutUser}
 
     return (
         <ShopContext.Provider value={contextValue}>

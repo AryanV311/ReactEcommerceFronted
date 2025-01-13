@@ -1,0 +1,133 @@
+/* Container Styling */
+.user-profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Section */
+  .user-profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .user-profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #upload-image {
+    display: none; /* Hidden input field */
+  }
+  
+  .user-profile-name {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  /* Divider */
+  hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+  
+  /* Section Styling */
+  .user-profile-section {
+    margin-bottom: 20px;
+  }
+  
+  .user-profile-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .user-profile-section p {
+    margin: 8px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .user-profile-section p strong {
+    font-weight: bold;
+  }
+  
+  /* Edit Button */
+  .edit-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-profile-container {
+      padding: 15px;
+    }
+  
+    .user-profile-header img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .user-profile-name {
+      font-size: 1.5rem;
+    }
+  
+    .user-profile-section h2 {
+      font-size: 1rem;
+    }
+  
+    .user-profile-section p {
+      font-size: 0.9rem;
+    }
+  
+    .edit-button {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
